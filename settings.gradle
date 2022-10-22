@@ -1,0 +1,10 @@
+rootProject.name = 'Social_Media_Project'
+include 'auth-service'
+include 'config-server'
+include 'config-server'
+include 'untitled'
+include 'user-service'
+include 'user-service:config-server-git'
+findProject(':user-service:config-server-git')?.name = 'config-server-git'
+include 'config-server-git'
+

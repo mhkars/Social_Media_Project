@@ -1,0 +1,25 @@
+server:
+  port: 8091
+
+
+
+spring:
+  datasource:
+    username: 'postgres'
+    password: 'root'
+    driver-class-name: org.postgresql.Driver
+    url: 'jdbc:postgresql://localhost:5432/socialMediaUser'
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+
+
+#Jwt
+
+
+secretkey: ${secretkey}
+audience:  ${audience}
+issuer:    ${issuer}
